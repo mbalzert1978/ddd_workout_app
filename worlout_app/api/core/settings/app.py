@@ -16,7 +16,7 @@ class AppSettings(BaseAppSettings):
     openapi_prefix: str = ""
     openapi_url: str = "/openapi.json"
     redoc_url: str = "/redoc"
-    title: str = "FastAPI Buber Dinner API"
+    title: str = "FastAPI Workout App API"
     issuer: str = "buberdinner"
     version: str = "0.0.1"
 

@@ -8,7 +8,7 @@ from ..settings.app import AppSettings
 class DevAppSettings(AppSettings):
     debug: bool = True
 
-    title: str = "Dev FastAPI Buber Dinner"
+    title: str = "Dev FastAPI Workout App"
 
     logging_level: int = logging.DEBUG
     model_config = SettingsConfigDict(env_file=".env")

@@ -8,12 +8,12 @@ from .settings.app import AppSettings
 
 
 async def connect_to_db(app: FastAPI, settings: AppSettings) -> None:
-    # todo connect to db
+    # TODO: connect to db
     return None
 
 
 async def close_db_connection(app: FastAPI) -> None:
-    # todo close db connection
+    # TODO: close db connection
     return None
 
 

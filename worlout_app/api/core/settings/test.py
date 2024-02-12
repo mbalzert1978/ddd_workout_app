@@ -8,7 +8,7 @@ from ..settings.app import AppSettings
 class TestAppSettings(AppSettings):
     debug: bool = True
 
-    title: str = "Test FastAPI Buber Dinner API Test"
+    title: str = "Test FastAPI Workout App API Test"
 
     secret_key: SecretStr = SecretStr("test_secret")
 
