@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "app_name"
+name = "workout_app"
 version = "0.1.0"
 description = ""
 authors = ["Markus Iorio <mbalzert@gmail.com>"]
