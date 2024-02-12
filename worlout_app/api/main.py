@@ -3,15 +3,13 @@ from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
 from starlette.middleware.cors import CORSMiddleware
 
-from buberdinner.api.core.config import get_app_settings
-from buberdinner.api.core.events import (
-    create_start_app_handler,
-    create_stop_app_handler,
-)
-from buberdinner.api.middleware import error_handler, http422_error_handler
-from buberdinner.api.v1.controllers import Authcontroller
-from buberdinner.app.error import Error
+from ..app.error import Error
+from .core.config import get_app_settings
+from .core.events import create_start_app_handler, create_stop_app_handler
+from .middleware import error_handler, http422_error_handler
+from .v1.controllers import Authcontroller
 
+# TODO: add validation error handler
 
 def get_application() -> FastAPI:
     settings = get_app_settings()

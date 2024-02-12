@@ -3,8 +3,9 @@ from fastapi import exceptions
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 
-from buberdinner.app.error import Error
+from ...app.error import Error
 
+# TODO: add validation error handler
 ValidationError = exceptions.RequestValidationError | pydantic.ValidationError
 
 
